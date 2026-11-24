@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Izna AI</title></head>
+<body style="font-family:sans-serif; text-align:center; padding:20px;">
+<h1>Izna AI - Smart Study Assistant</h1>
+<p>Koi bhi topic likho, summary aur quiz pao!</p>
+<input id="topic" placeholder="Jaise: Photosynthesis" style="padding:10px; width:80%;">
+<br><br>
+<button onclick="generate()" style="padding:10px 20px; background:blue; color:white; border:none;">Generate</button>
+<div id="result" style="text-align:left; margin-top:20px;"></div>
+<script>
+function generate(){
+let t=document.getElementById('topic').value;
+document.getElementById('result').innerHTML="<h3>Topic: "+t+"</h3><p><b>Summary:</b> "+t+" ek important topic hai jo exam me bar bar aata hai.</p><h4>5 Important Points:</h4><p>1. Definition<br>2. Process<br>3. Examples<br>4. Importance<br>5. Exam Questions</p><h4>Quiz:</h4><p>Q1. "+t+" kya hai?<br>Q2. 2 examples batao?<br>Q3. Kyun important hai?</p>";
+}
+</script>
+</body>
+</html>
